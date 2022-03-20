@@ -1,0 +1,778 @@
+{
+	"info": {
+		"_postman_id": "100fba45-f09a-4927-a0fc-14135cc04120",
+		"name": "make-it-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CRUD - Movies",
+			"item": [
+				{
+					"name": "localhost:3000/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/movies",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"name\": \"Life Is Beautiful\",\r\n    \"duration\": 117,   \r\n    \"ratingsAverage\": 4.3,\r\n    \"ratingsQuantity\": 671,\r\n    \"summary\": \"When an open-minded Jewish waiter and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.\",\r\n    \"description\": \"In 1930s Italy, a carefree Jewish waiter named Guido starts a fairy tale life by courting and marrying a lovely woman from a nearby city. Guido and his wife have a son and live happily together until the occupation of Italy by German forces. In an attempt to hold his family together and help his son survive the horrors of a Jewish Concentration Camp, Guido imagines that the Holocaust is a game and that the grand prize for winning is a tank\",\r\n    \"imageCover\": \"https://imgtoolkit.culturebase.org/?color=FFFFFF&quality=8&ar_ratio=1.3&format=jpg&file=http%3A%2F%2Fdata.heimat.de%2Fpics%2Fc%2F4%2F5%2F4%2F7%2Fpic_1495794901_c45477a489328fb27c5eeb4866660e1f.jpeg&do=cropOut&width=1200&height=780\",\r\n    \"images\": [\"https://imgtoolkit.culturebase.org/?color=FFFFFF&quality=8&ar_ratio=1.3&format=jpg&file=http%3A%2F%2Fdata.heimat.de%2Fpics%2Fc%2F4%2F5%2F4%2F7%2Fpic_1495794901_c45477a489328fb27c5eeb4866660e1f.jpeg&do=cropOut&width=1200&height=780\"],\r\n    \"premiereDate\": [\"1997-06-30\"]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/movies",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/6231e6abaa726706ef2cfdcd",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"duration\": 118\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/movies/movie/6231e9d498eeb87f23594522",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"movie",
+								"6231e9d498eeb87f23594522"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/6231e6abaa726706ef2cfdcd",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/movieapi/movies/movie/6231e9d498eeb87f23594522",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"movieapi",
+								"movies",
+								"movie",
+								"6231e9d498eeb87f23594522"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"name\": \"Lorem Ipsum5\",\r\n    \"duration\": 117,   \r\n    \"ratingsAverage\": 2.4,\r\n    \"ratingsQuantity\": 50,\r\n    \"summary\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\",\r\n    \"imageCover\": \"https://imgtoolkit.culturebase.org/?color=FFFFFF&quality=8&ar_ratio=1.3&format=jpg&file=http%3A%2F%2Fdata.heimat.de%2Fpics%2Fc%2F4%2F5%2F4%2F7%2Fpic_1495794901_c45477a489328fb27c5eeb4866660e1f.jpeg&do=cropOut&width=1200&height=780\",\r\n    \"images\": [\"https://imgtoolkit.culturebase.org/?color=FFFFFF&quality=8&ar_ratio=1.3&format=jpg&file=http%3A%2F%2Fdata.heimat.de%2Fpics%2Fc%2F4%2F5%2F4%2F7%2Fpic_1495794901_c45477a489328fb27c5eeb4866660e1f.jpeg&do=cropOut&width=1200&height=780\"],\r\n    \"premiereDate\": [\"2000-06-30\"]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000api/movies",
+							"host": [
+								"localhost"
+							],
+							"port": "3000api",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/top-5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/movies/top",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"top"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/movies/6231e9d498eeb87f23594522/reviews",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/movies/6231e9d498eeb87f23594522/reviews",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies",
+								"6231e9d498eeb87f23594522",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/movies?name=Life Is Beautiful",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/movies?name=Life Is Beautiful",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"movies"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Life Is Beautiful"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD - User",
+			"item": [
+				{
+					"name": "for Admin only",
+					"item": [
+						{
+							"name": "localhost:3000/api/users/me",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODYxNywiZXhwIjoxNjU1MjI0NjE3fQ.emTNlTzhWh9h6qq15tr0mzMkuWKRd0I8NRPIJwswB-A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/users/me",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"me"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:3000/api/users/login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"mladen.xristov4@abv.bg\",\r\n    \"password\": \"pass1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:3000/api/users/",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/users/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:3000/api/users/62320d4178ccfeaaf338fd68",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/users/62320d4178ccfeaaf338fd68",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"62320d4178ccfeaaf338fd68"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/api/users/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mladen4\",\r\n    \"email\": \"mladen.xristov4@abv.bg\",\r\n    \"password\": \"pass1234\",\r\n    \"passwordConfirm\": \"pass1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/users/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mladen.xristov2@abv.bg\",\r\n    \"password\": \"pass1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/users/forgotPassword",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mladen.xristov@abv.bg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/forgotPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/users/updateMyPassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzFmZmRhOGI2MzhlZGY5MjdmNTI1MyIsImlhdCI6MTY0NzQ0NDUzNywiZXhwIjoxNjU1MjIwNTM3fQ.5zaDr3QSuFvqaXjNmnJtz2g_brU6QltzodCgm7ClXTU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"passwordCurrent\": \"pass1234\",\r\n    \"password\": \"newpassword\",\r\n    \"passwordConfirm\": \"newpassword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/updateMyPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"updateMyPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/users/me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzFmZmRhOGI2MzhlZGY5MjdmNTI1MyIsImlhdCI6MTY0NzQ0NTI1OCwiZXhwIjoxNjU1MjIxMjU4fQ.d725F8KRdSsxW_MVqUdE4AafQ3sqoIGIiywwZX7gOxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/me",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/users/updateMe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzFmZmRhOGI2MzhlZGY5MjdmNTI1MyIsImlhdCI6MTY0NzQ0NTI1OCwiZXhwIjoxNjU1MjIxMjU4fQ.d725F8KRdSsxW_MVqUdE4AafQ3sqoIGIiywwZX7gOxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Administrator\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/updateMe",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"updateMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/users/deleteMe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzFmZmRhOGI2MzhlZGY5MjdmNTI1MyIsImlhdCI6MTY0NzQ0NTI1OCwiZXhwIjoxNjU1MjIxMjU4fQ.d725F8KRdSsxW_MVqUdE4AafQ3sqoIGIiywwZX7gOxY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users/deleteMe",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"deleteMe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD - Reviews",
+			"item": [
+				{
+					"name": "edit Review",
+					"item": []
+				},
+				{
+					"name": "localhost:3000/api/review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review\": \"Loved it\",\r\n    \"rating\": 4.8,\r\n    \"movie\": \"6231f11880cb3e3cad954abb\",\r\n    \"user\": \"6232122859a90dcef359c881\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/review",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/review",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"review"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD - Favorite",
+			"item": [
+				{
+					"name": "localhost:3000/api/favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzIxMjI4NTlhOTBkY2VmMzU5Yzg4MSIsImlhdCI6MTY0NzQ0ODY5OSwiZXhwIjoxNjU1MjI0Njk5fQ.OiT-JFxdn7vHgw9MUar4mHLo0DIHJRRcNzY5Hx76JvY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"favorite\": \"true\",\r\n    \"movie\": \"6231f11880cb3e3cad954abb\",\r\n    \"user\": \"6232122859a90dcef359c881\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/favorite",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
