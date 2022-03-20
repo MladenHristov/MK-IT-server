@@ -6,14 +6,13 @@
 get   --5TopMovies
   
 You have .filter() .sort() .paginate() added here!
-('/') 
-get    --getAllMovies
-post   --createMovie
-  
-('/movie/:id')
-get     --getMovie
-patch   --updateMovie
-delete  --deleteMovie
+
+get('/')     --getAllMovies
+post('/')    --createMovie
+
+get('/movie/:id')     --getMovie
+patch('/movie/:id')   --updateMovie
+delete('/movie/:id')  --deleteMovie
 
 ---------------------------------------------------  
 
