@@ -5,14 +5,12 @@
 
   ('/top')
   get   --5TopMovies
-
-  //Get all movies and add a movie
+  
+  You have .filter() .sort() .paginate() added here!
   ('/')  
-  //You have .filter() .sort() .paginate() added here
   .get    --getAllMovies)
   .post   --createMovie);
-
-// get 1 movie by id and change/delete it
+  
   ('/movie/:id')
   get     --getMovie
   patch   --updateMovie
@@ -23,8 +21,8 @@
 {url}/api/users CRUD for Users
 
    For All Users   
-   post /signup'               -- signup
-   post /login'                -- login
+   post /signup                -- signup
+   post /login                 -- login
    post /forgotPassword        -- forgotPassword 
    patch /resetPassword/:token --resetPassword
    patch /updateMyPassword     --updatePassword
