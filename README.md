@@ -6,9 +6,9 @@
 get   --5TopMovies
   
 You have .filter() .sort() .paginate() added here!
-('/')  
-.get    --getAllMovies)
-.post   --createMovie);
+('/') 
+get    --getAllMovies
+post   --createMovie
   
 ('/movie/:id')
 get     --getMovie
